@@ -1,6 +1,5 @@
 import React from 'react'
 import Part1 from './Part1'
-// Icons ko import karna
 import { FaGithub, FaFacebook, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
@@ -8,7 +7,6 @@ const Footer = () => {
     <>
       <Part1 />
       
-      {/* Is container ko bhi footer ke width (80%) ke sath align kiya hai */}
       <div className="flex flex-col md:flex-row items-center justify-between w-[80%] m-auto py-6 border-t border-gray-200 gap-4">
         
         <div>
