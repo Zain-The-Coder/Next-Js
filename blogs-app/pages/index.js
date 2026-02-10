@@ -1,4 +1,5 @@
 import Featured from "@/components/featured/Featured";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import Center from "@/components/hero/Center";
 import Last from "@/components/last/Last";
@@ -13,6 +14,7 @@ export default function Home() {
     <Center />
     <Featured />
     <Last />
+    <Footer />
     </>
   );
 }
