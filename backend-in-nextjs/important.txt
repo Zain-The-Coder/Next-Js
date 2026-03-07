@@ -1,0 +1,11 @@
+Backend Methods 
+
+getAll()
+Ye karta kya hai:
+
+products.json read karta hai
+↓
+JSON ko object me convert karta hai
+↓
+saara data return karta hai
+
