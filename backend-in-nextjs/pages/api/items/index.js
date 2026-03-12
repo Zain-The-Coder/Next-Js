@@ -1,15 +1,15 @@
-import { getAllItems } from "@/services/service"
-import { save } from "@/services/service";
+import { getAllItems } from "@/service/service";
+import { saveItem } from "@/service/service";
 
 export default function handler (req , res) {
     if(req.method === "GET") {
-        const data = getAllItems();
-        return res.status(200).json(data);
-    }else if (req.method === "POST") {
-    const {title, description} = req.body;
-    save(title, description);
-    return res.status(201).json({message: "Data Added Successfully"}).send();
-  } else {
-        return res.status(404).json({error : "Page Not Found"})
+    const data = getAllItems();
+    return res.status(200).json(data);
+    } else if (req.method === "POST") {
+        const {title , description , price} = req.body ;
+        saveItem(title , description , price);
+        res.status(200).json({message : "Item Added Successfully !"});
+    } else {
+        res.status(404).json({errorMessage : "Method is not allowed"});
     }
 }
